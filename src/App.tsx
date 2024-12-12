@@ -1,15 +1,11 @@
-import { Flex } from "@chakra-ui/react";
-import SideBar from "./components/SideBar";
-import TopBar from "./components/TopBar";
-import DataArea from "./components/DataArea";
+import { AppProvider } from "./context/AppContext";
+import AppRoutes from "./routes/Routes";
 
 function App() {
     return (
-        <Flex w='100%' h='100%' backgroundColor='#D9D9D9' overflowY='hidden'>
-            <SideBar />
-            <TopBar />
-            <DataArea />
-        </Flex>
+        <AppProvider>
+            <AppRoutes />
+        </AppProvider>
     );
 }
 

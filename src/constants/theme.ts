@@ -10,7 +10,7 @@ const theme = extendTheme({
         global: {
             "::-webkit-scrollbar": {
                 width: "12px",
-                backgroundColor: `white`,
+                backgroundColor: `transparent`,
             },
             "::-webkit-scrollbar-thumb": {
                 borderRadius: "4px",
@@ -20,6 +20,11 @@ const theme = extendTheme({
                 backgroundColor: `rgb(233, 113, 50)`,
                 color: `white`,
             },
+            // "::-webkit-calendar-picker-indicator": {
+            //     backgroundColor: "red",
+            //     borderRadius: "100%",
+            //     padding: "5px",
+            // },
         },
     },
 });
